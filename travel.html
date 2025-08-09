@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+    }
+
+    nav .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: orange;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      padding: 10px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: white;
+      color: black;
+    }
+
+    /* Featured Destinations */
+    .featured {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .featured h2 {
+      font-size: 2rem;
+      color: #006400;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      color: #006400;
+      padding: 15px 15px 0 15px;
+    }
+
+    .card p {
+      padding: 0 15px 15px 15px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">🌍 THE WORLD TRAVEL BLOG</div>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="#">DESTINATIONS</a></li>
+      <li><a href="#">CATEGORIES</a></li>
+      <li><a href="#">GALLERY</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>EXPLORE. DREAM. DISCOVER.</h1>
+    <p>This is a world travel blog featuring beautiful destinations, new experiences, and hidden places around the globe.</p>
+    <p>Please tag along!</p>
+    <button>START EXPLORING</button>
+  </section>
+
+  <!-- Featured Destinations -->
+  <section class="featured">
+    <h2>Featured Destinations</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Bali">
+        <h3>Bali, Indonesia</h3>
+        <p>Experience the tropical paradise with stunning beaches and vibrant culture.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Swiss Alps">
+        <h3>Swiss Alps, Switzerland</h3>
+        <p>Discover majestic mountains, alpine lakes, and charming villages.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=800&q=80" alt="Santorini">
+        <h3>Santorini, Greece</h3>
+        <p>Enjoy breathtaking sunsets over whitewashed buildings and blue domes.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
